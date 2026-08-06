@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Register | Orbit Market</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:420px;
+    background:#111;
+    border:1px solid gold;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 0 30px rgba(255,215,0,.2);
+}
+
+h1{
+    color:gold;
+    text-align:center;
+    margin-bottom:25px;
+    letter-spacing:2px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:#fff;
+    font-size:16px;
+}
+
+input::placeholder{
+    color:#aaa;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:20px;
+    border:none;
+    border-radius:10px;
+    background:red;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#cc0000;
+}
+
+.login{
+    margin-top:20px;
+    text-align:center;
+    color:#fff;
+}
+
+.login a{
+    color:gold;
+    text-decoration:none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>ORBIT MARKET</h1>
+
+<form action="#" method="post">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="password" placeholder="Password" required>
+
+<input type="password" placeholder="Confirm Password" required>
+
+<button type="submit">CREATE ACCOUNT</button>
+
+</form>
+
+<div class="login">
+Already have an account?
+<a href="login.html">Login</a>
+</div>
+
+</div>
+
+</body>
+</html>
