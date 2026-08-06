@@ -103,25 +103,69 @@ button:hover{
 
     </button>
 
-    <button class="apple-btn">
+    <form id="registerForm">
 
-        <div class="icon apple-icon"></div>
+<input id="email" type="email" placeholder="Email" required>
 
-        <span>Continue with Apple</span>
+<input id="password" type="password" placeholder="Password" required>
 
-    </button>
+<button type="submit">
+Create Account
+</button>
 
-</div>
+</form>
 
-<input type="text" placeholder="Full Name" required>
 
-<input type="email" placeholder="Email Address" required>
+<script>
 
-<input type="tel" placeholder="Phone Number" required>
+document.getElementById("registerForm").onsubmit = async function(e){
 
-<input type="password" placeholder="Password" required>
+e.preventDefault();
 
-<input type="password" placeholder="Confirm Password" required>
+
+let email =
+document.getElementById("email").value;
+
+
+let password =
+document.getElementById("password").value;
+
+
+
+let response = await fetch(
+"http://localhost:5000/api/auth/register",
+{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+email,
+password
+
+})
+
+});
+
+
+let data = await response.json();
+
+
+alert(data.message);
+
+
+// go to login page
+
+window.location.href="login.html";
+
+
+}
+
+</script>
     <!-- Add inside the <form>, just before the CREATE ACCOUNT button -->
 
 <select required>
