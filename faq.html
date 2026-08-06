@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ - Orbit Market</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+
+background:#000;
+
+color:white;
+
+padding:30px;
+
+}
+
+
+.container{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+
+h1{
+
+text-align:center;
+
+color:gold;
+
+margin-bottom:30px;
+
+}
+
+
+.faq{
+
+background:#111;
+
+border:1px solid #333;
+
+border-radius:15px;
+
+margin-bottom:15px;
+
+overflow:hidden;
+
+}
+
+
+.question{
+
+padding:20px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+color:gold;
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+
+.answer{
+
+display:none;
+
+padding:0 20px 20px;
+
+color:#ccc;
+
+line-height:1.6;
+
+}
+
+
+.faq:hover{
+
+border-color:gold;
+
+}
+
+
+.back{
+
+display:block;
+
+text-align:center;
+
+margin-top:30px;
+
+color:gold;
+
+text-decoration:none;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>❓ Orbit Market FAQ</h1>
+
+
+<div class="faq">
+
+<div class="question">
+
+What is Orbit Market?
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+Orbit Market is a platform interface designed for investment tracking, market information, and trading features.
+
+</div>
+
+</div>
+
+
+
+<div class="faq">
+
+<div class="question">
+
+How do I create an account?
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+Click Register, provide your details, verify your account, then log in to access your dashboard.
+
+</div>
+
+</div>
+
+
+
+<div class="faq">
+
+<div class="question">
+
+How can I deposit funds?
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+Go to the Wallet section and select Deposit. Follow the available payment instructions.
+
+</div>
+
+</div>
+
+
+
+<div class="faq">
+
+<div class="question">
+
+How do withdrawals work?
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+Submit a withdrawal request from your wallet. The request will be processed according to platform rules.
+
+</div>
+
+</div>
+
+
+
+<div class="faq">
+
+<div class="question">
+
+Can I trade Forex?
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+Yes, the Forex section provides access to market information and trading features.
+
+</div>
+
+</div>
+
+
+
+<div class="faq">
+
+<div class="question">
+
+How do I contact support?
+
+<span>+</span>
+
+</div>
+
+<div class="answer">
+
+Visit the Contact page or Support section to reach the Orbit Market team.
+
+</div>
+
+</div>
+
+
+
+<a class="back" href="dashboard.html">
+
+← Back to Dashboard
+
+</a>
+
+
+</div>
+
+
+
+<script>
+
+const questions =
+document.querySelectorAll(".question");
+
+
+questions.forEach(q=>{
+
+q.onclick=()=>{
+
+const answer =
+q.nextElementSibling;
+
+
+if(answer.style.display==="block"){
+
+answer.style.display="none";
+
+q.querySelector("span").innerHTML="+";
+
+}
+
+else{
+
+answer.style.display="block";
+
+q.querySelector("span").innerHTML="-";
+
+}
+
+}
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
