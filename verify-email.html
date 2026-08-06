@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Verify Email | Orbit Market</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.container{
+width:420px;
+padding:35px;
+background:#111;
+border:1px solid gold;
+border-radius:20px;
+text-align:center;
+box-shadow:0 0 30px rgba(255,215,0,.2);
+}
+
+.icon{
+font-size:60px;
+margin-bottom:15px;
+}
+
+h1{
+color:gold;
+margin-bottom:10px;
+}
+
+p{
+color:#bbb;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+.code{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-bottom:25px;
+}
+
+.code input{
+width:55px;
+height:60px;
+text-align:center;
+font-size:24px;
+background:#222;
+color:#fff;
+border:1px solid #333;
+border-radius:10px;
+}
+
+.code input:focus{
+outline:none;
+border-color:gold;
+box-shadow:0 0 10px gold;
+}
+
+button{
+width:100%;
+padding:15px;
+background:red;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#cc0000;
+}
+
+.resend{
+margin-top:20px;
+}
+
+.resend a{
+color:gold;
+text-decoration:none;
+}
+
+.back{
+margin-top:15px;
+}
+
+.back a{
+color:#fff;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="icon">📧</div>
+
+<h1>Verify Your Email</h1>
+
+<p>
+Enter the 6-digit verification code sent to your email address.
+</p>
+
+<form>
+
+<div class="code">
+
+<input type="text" maxlength="1" required>
+<input type="text" maxlength="1" required>
+<input type="text" maxlength="1" required>
+<input type="text" maxlength="1" required>
+<input type="text" maxlength="1" required>
+<input type="text" maxlength="1" required>
+
+</div>
+
+<button type="submit">
+VERIFY EMAIL
+</button>
+
+</form>
+
+<div class="resend">
+<a href="#">Resend Code</a>
+</div>
+
+<div class="back">
+<a href="login.html">← Back to Login</a>
+</div>
+
+</div>
+
+</body>
+</html>
