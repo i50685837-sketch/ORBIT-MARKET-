@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | Orbit Market</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+overflow:hidden;
+}
+
+/* Background Graph */
+
+.graph{
+position:fixed;
+width:100%;
+height:100%;
+opacity:.15;
+z-index:-1;
+}
+
+svg{
+width:100%;
+height:100%;
+}
+
+path{
+fill:none;
+stroke:#00ff88;
+stroke-width:3;
+stroke-dasharray:2000;
+stroke-dashoffset:2000;
+animation:graph 8s linear infinite;
+}
+
+@keyframes graph{
+
+to{
+
+stroke-dashoffset:0;
+
+}
+
+}
+
+.container{
+
+width:420px;
+
+padding:35px;
+
+background:#111;
+
+border:1px solid gold;
+
+border-radius:20px;
+
+box-shadow:0 0 40px rgba(255,215,0,.2);
+
+}
+
+.logo{
+
+text-align:center;
+
+font-size:55px;
+
+margin-bottom:10px;
+
+}
+
+h1{
+
+text-align:center;
+
+color:gold;
+
+margin-bottom:25px;
+
+letter-spacing:2px;
+
+}
+
+input{
+
+width:100%;
+
+padding:15px;
+
+margin:10px 0;
+
+background:#222;
+
+border:none;
+
+border-radius:10px;
+
+color:#fff;
+
+font-size:16px;
+
+}
+
+input:focus{
+
+outline:none;
+
+box-shadow:0 0 15px gold;
+
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+margin-top:15px;
+
+background:red;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.03);
+
+box-shadow:0 0 20px red;
+
+}
+
+.links{
+
+margin-top:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+}
+
+.links a{
+
+color:gold;
+
+text-decoration:none;
+
+font-size:14px;
+
+}
+
+.register{
+
+margin-top:25px;
+
+text-align:center;
+
+color:white;
+
+}
+
+.register a{
+
+color:gold;
+
+text-decoration:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="graph">
+
+<svg viewBox="0 0 1200 600">
+
+<path d="M0 520
+L90 500
+L180 470
+L270 430
+L360 460
+L460 350
+L560 380
+L680 250
+L760 280
+L880 170
+L980 190
+L1100 90
+L1200 40"/>
+
+</svg>
+
+</div>
+
+<div class="container">
+
+<div class="logo">🌍</div>
+
+<h1>ORBIT MARKET</h1>
+
+<form>
+
+<input type="email"
+placeholder="Email Address"
+required>
+
+<input type="password"
+placeholder="Password"
+required>
+
+<button type="submit">
+
+LOGIN
+
+</button>
+
+</form>
+
+<div class="links">
+
+<a href="forgot-password.html">
+
+Forgot Password?
+
+</a>
+
+<a href="support.html">
+
+Need Help?
+
+</a>
+
+</div>
+
+<div class="register">
+
+Don't have an account?
+
+<a href="register.html">
+
+Create Account
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
