@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Orbit Market</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#000;
+overflow:hidden;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+/* Animated Graph */
+
+.graph{
+position:absolute;
+width:100%;
+height:100%;
+opacity:.3;
+}
+
+svg{
+width:100%;
+height:100%;
+}
+
+.graph path{
+fill:none;
+stroke:#00ff88;
+stroke-width:3;
+stroke-linecap:round;
+stroke-linejoin:round;
+stroke-dasharray:2000;
+stroke-dashoffset:2000;
+animation:draw 8s linear infinite;
+}
+
+@keyframes draw{
+to{
+stroke-dashoffset:0;
+}
+}
+
+.container{
+text-align:center;
+z-index:10;
+}
+
+.logo{
+font-size:5rem;
+margin-bottom:20px;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-15px);
+}
+}
+
+h1{
+color:gold;
+font-size:4rem;
+letter-spacing:6px;
+text-shadow:
+0 0 10px gold,
+0 0 20px gold,
+0 0 40px gold;
+margin-bottom:40px;
+}
+
+.start-btn{
+display:inline-block;
+padding:20px 60px;
+background:red;
+color:white;
+text-decoration:none;
+font-size:1.5rem;
+font-weight:bold;
+border-radius:50px;
+box-shadow:
+0 0 20px red,
+0 0 40px red;
+transition:.4s;
+}
+
+.start-btn:hover{
+transform:scale(1.1);
+box-shadow:
+0 0 30px red,
+0 0 60px red;
+}
+
+.login{
+margin-top:25px;
+}
+
+.login a{
+color:white;
+text-decoration:none;
+font-size:1rem;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="graph">
+
+<svg viewBox="0 0 1200 600">
+
+<path d="
+M0 500
+L100 480
+L180 520
+L250 430
+L340 450
+L420 350
+L500 380
+L620 240
+L700 260
+L780 180
+L850 200
+L930 120
+L1000 150
+L1100 70
+L1200 20
+"/>
+
+</svg>
+
+</div>
+
+<div class="container">
+
+<div class="logo">
+🌍
+</div>
+
+<h1>ORBIT MARKET</h1>
+
+<a href="register.html" class="start-btn">
+START NOW
+</a>
+
+<div class="login">
+<a href="login.html">Already have an account? Login</a>
+</div>
+
+</div>
+
+</body>
+  </html>
